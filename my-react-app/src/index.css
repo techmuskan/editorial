@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tiptap-editor p.is-empty::before {
+  color: #a3a3a3;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tiptap-editor table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tiptap-editor th,
+.tiptap-editor td {
+  border: 1px solid #d4d4d4;
+  padding: 8px 12px;
+  min-width: 100px;
+  vertical-align: top;
+}
+
+.tiptap-editor th {
+  font-weight: 600;
+  background: #f5f5f5;
+}
+
+.tiptap-editor .selectedCell {
+  background: #f0f0f0;
+}
+
+/* Code syntax highlighting */
+.hljs-comment,
+.hljs-quote {
+  color: #6a737d;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+  color: #d73a49;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #22863a;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+  color: #005cc5;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #6f42c1;
+}
+
+.hljs-function .hljs-title {
+  color: #6f42c1;
+}
+
+.hljs-meta {
+  color: #735c0f;
+}
+
+/* Collaborative cursors */
+
+.collaboration-carets__caret {
+  position: relative;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-left: 2px solid currentColor;
+  border-right: 0;
+  pointer-events: none;
+}
+
+.collaboration-carets__label {
+  position: absolute;
+  top: -1.6em;
+  left: -1px;
+  z-index: 20;
+
+  padding: 3px 7px;
+  border-radius: 6px 6px 6px 2px;
+
+  background: currentColor;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  pointer-events: none;
+  user-select: none;
+
+  box-shadow:
+    0 2px 6px rgb(0 0 0 / 0.12);
+}
+
+.collaboration-carets__selection {
+  background-color: currentColor;
+  opacity: 0.10;
+  pointer-events: none;
+}
