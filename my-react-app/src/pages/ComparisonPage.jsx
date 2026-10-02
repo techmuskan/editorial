@@ -237,33 +237,6 @@ export default function ComparisonPage() {
         </Container>
       </Section>
 
-      {/* Bottom CTA */}
-      <Section className="py-20 sm:py-28 bg-midnight text-white">
-        <Container size="narrow">
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight leading-[1.1] mb-5">
-              See for yourself.
-            </h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-10 max-w-xl mx-auto">
-              The best way to understand how Editorial.io differs is to try it. Join our early access program and experience a new approach to documentation.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium bg-white text-midnight rounded-full hover:bg-white/90 transition-all duration-300 shadow-lg shadow-white/10"
-              >
-                Get Early Access <ArrowRight size={15} />
-              </Link>
-              <Link
-                to="/features"
-                className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium border border-white/15 text-white/70 rounded-full hover:bg-white/5 hover:text-white transition-all duration-300"
-              >
-                Explore Features
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </Section>
     </main>
   );
 }

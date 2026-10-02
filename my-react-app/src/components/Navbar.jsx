@@ -41,15 +41,19 @@ export default function Navbar() {
                 : 'bg-transparent'
             }`}
           >
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 shrink-0 group" aria-label="Editorial.io Home">
-              <div className="w-7 h-7 rounded-lg bg-ink flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 3h10v1.5H3zm0 3.5h7v1.5H3zm0 3.5h8v1.5H3zm0 3.5h5v1.5H3z" fill="#FAFAF8" opacity="0.9"/>
+            {/* Exclusive Brand Logo */}
+            <Link to="/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Editorial.io Home">
+              <div className="w-8 h-8 rounded-[8px] bg-[#111113] border border-black/10 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-accent-blue/40 shadow-sm">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+                  <path d="M7.5 7.5H14.5V9.2H12V22.8H14.5V24.5H7.5V22.8H10V9.2H7.5V7.5Z" fill="#FAFAF8"/>
+                  <path d="M12 7.5H22V10.2H20V9.2H12V7.5Z" fill="#FAFAF8"/>
+                  <path d="M12 14.8H19.5V16.8H12V14.8Z" fill="#FAFAF8"/>
+                  <path d="M12 22.8H20.5V21.8H22.5V24.5H12V22.8Z" fill="#FAFAF8"/>
+                  <circle cx="24" cy="9" r="2.2" fill="#2563EB"/>
                 </svg>
               </div>
-              <span className="text-[15px] font-semibold tracking-tight text-foreground">
-                Editorial<span className="text-muted">.io</span>
+              <span className="text-[16px] font-semibold tracking-tight text-foreground">
+                Editorial<span className="text-accent-blue font-medium">.io</span>
               </span>
             </Link>
 

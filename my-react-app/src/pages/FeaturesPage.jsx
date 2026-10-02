@@ -243,25 +243,6 @@ export default function FeaturesPage() {
         </Container>
       </Section>
 
-      {/* Bottom CTA */}
-      <Section className="py-20 sm:py-28 bg-cream">
-        <Container size="narrow">
-          <div className="text-center">
-            <SectionTitle className="mb-5" serif>Ready to experience<br />documentation, reimagined?</SectionTitle>
-            <SectionDescription className="mx-auto mb-10">
-              Editorial.io is currently in early access. Join the waitlist to be among the first to try a fundamentally different approach to documentation.
-            </SectionDescription>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Button href="/contact" variant="primary" size="lg">
-                Request Early Access <ArrowRight size={15} />
-              </Button>
-              <Button href="/comparison" variant="secondary" size="lg">
-                See How We Compare
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
     </main>
   );
 }

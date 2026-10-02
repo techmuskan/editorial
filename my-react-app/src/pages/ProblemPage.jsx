@@ -173,46 +173,31 @@ export default function ProblemPage() {
         </Container>
       </Section>
 
-      {/* The vision — connecting to Editorial.io */}
-      <Section className="py-20 sm:py-28 bg-midnight text-white">
+      {/* The vision */}
+      <Section className="py-20 sm:py-28 bg-[#FBFBFA] border-t border-border-subtle">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <SectionLabel className="!text-white/40">The Editorial.io vision</SectionLabel>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-[1.1] mb-6">
+            <SectionLabel>The Editorial.io vision</SectionLabel>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-[1.1] mb-6 text-foreground font-serif">
               Documentation needs a<br />
-              <span className="text-white/40">fundamentally different system.</span>
+              <span className="text-ink-tertiary">fundamentally different system.</span>
             </h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-10">
+            <p className="text-base sm:text-lg text-ink-secondary leading-relaxed mb-10">
               Not another text editor with AI bolted on. Not another template library. A workspace that understands context, preserves knowledge, and makes creating reliable documentation the default, not the exception.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               {[
                 { icon: Brain, label: 'Context-first', desc: 'Understands what you need before writing begins' },
                 { icon: Database, label: 'Knowledge-driven', desc: 'Every document builds on what came before' },
                 { icon: FileText, label: 'Structure-native', desc: 'Produces structured documents, not walls of text' },
               ].map((v) => (
-                <div key={v.label} className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-5 text-center">
-                  <v.icon size={22} className="text-white/40 mx-auto mb-3" />
-                  <p className="text-sm font-medium mb-1">{v.label}</p>
-                  <p className="text-xs text-white/40">{v.desc}</p>
+                <div key={v.label} className="bg-white border border-border rounded-xl p-5 text-center shadow-sm">
+                  <v.icon size={22} className="text-accent-blue mx-auto mb-3" />
+                  <p className="text-sm font-semibold mb-1 text-foreground">{v.label}</p>
+                  <p className="text-xs text-ink-secondary">{v.desc}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
-                to="/features"
-                className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium bg-white text-midnight rounded-full hover:bg-white/90 transition-all duration-300 shadow-lg shadow-white/10"
-              >
-                See How It Works <ArrowRight size={15} />
-              </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium border border-white/15 text-white/70 rounded-full hover:bg-white/5 hover:text-white transition-all duration-300"
-              >
-                Get Early Access
-              </Link>
             </div>
           </div>
         </Container>

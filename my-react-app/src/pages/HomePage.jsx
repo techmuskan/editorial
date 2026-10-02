@@ -450,7 +450,7 @@ export default function HomePage() {
   const [quickSubmitting, setQuickSubmitting] = useState(false);
 
   useEffect(() => {
-    document.title = 'Editorial.io — AI-Native Documentation Workspace';
+    document.title = 'Editorial.io';
     window.scrollTo(0, 0);
   }, []);
 
@@ -479,7 +479,7 @@ export default function HomePage() {
   return (
     <main className="bg-[#FAFAF8]">
       {/* ─── Hero Section (Voiceflow-Inspired Editorial Layout) ─── */}
-      <section className="relative pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
+      <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-8 sm:pb-12 overflow-hidden">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-8">
           
           {/* Headline & Subhead */}
